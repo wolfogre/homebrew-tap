@@ -8,7 +8,7 @@ class Gqlgen < Formula
     depends_on "go" => :build
 
     def install
-        system "bash -c 'GOPATH=#{buildpath}/gopath GO111MODULE=on go get -u -v github.com/99designs/gqlgen@v0.11.3'"
+        system "bash -c 'ls -l -a && GOPATH=#{buildpath}/gopath GO111MODULE=on go get -u -v github.com/99designs/gqlgen@v0.11.3'"
         bin.install "#{buildpath}/gopath/bin/gqlgen"
     end
 
