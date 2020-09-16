@@ -2,24 +2,24 @@
 class Gtag < Formula
   desc "Help you to get golang struct's tags elegantly."
   homepage "https://github.com/wolfogre/gtag"
-  version "0.7.2"
+  version "0.8.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/wolfogre/gtag/releases/download/v0.7.2/gtag_0.7.2_darwin_amd64.tar.gz"
-    sha256 "1fbcc26cfb7a644d52c3e79e811f7ad4e56e43b47e45de84e7672388aec78a22"
+    url "https://github.com/wolfogre/gtag/releases/download/v0.8.0/gtag_0.8.0_darwin_amd64.tar.gz"
+    sha256 "48b9f2f0431a9f12fa19d6e932daece6209a3eb57e8bc87d36c0cbb6c69dde71"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/wolfogre/gtag/releases/download/v0.7.2/gtag_0.7.2_linux_amd64.tar.gz"
-      sha256 "6700277be4088c7711ef6f3d87670347f510bb8dcddf094489d463159a92d1bf"
+      url "https://github.com/wolfogre/gtag/releases/download/v0.8.0/gtag_0.8.0_linux_amd64.tar.gz"
+      sha256 "e1268d35c5793819f3e447367e2250d05109938ff67409ccf73b2fc244c2dfc8"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/wolfogre/gtag/releases/download/v0.7.2/gtag_0.7.2_linux_arm64.tar.gz"
-        sha256 "79edac148e5f01570d3e0eb53a7f68563ae8671f13dbbd4beacd299de7576d8d"
+        url "https://github.com/wolfogre/gtag/releases/download/v0.8.0/gtag_0.8.0_linux_arm64.tar.gz"
+        sha256 "b631fd73e3383aaf1c67fa4193c9ac27222c24676f72318a5bf88ab45f072bcb"
       else
-        url "https://github.com/wolfogre/gtag/releases/download/v0.7.2/gtag_0.7.2_linux_armv6.tar.gz"
-        sha256 "8012c213048b528f4d3bc18271ff0902874d650e41d615890c1a9ca7a285d358"
+        url "https://github.com/wolfogre/gtag/releases/download/v0.8.0/gtag_0.8.0_linux_armv6.tar.gz"
+        sha256 "4ad61a02c8b60c2480a5f875a8e2c05f085285f2e53c9b5932bd04aae4b0b925"
       end
     end
   end
